@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Calculator Javascript & Tailwind</title>
+</head>
+
+<body class="bg-gray-900">
+    <div class="container w-[450px] h-[570px] bg-slate-800 rounded mx-auto mt-[100px]">
+        <div class="input flex flex-col justify-center align-middle">
+            <input type="text"
+                class="w-10/12 h-[80px] text-5xl text-right text-white bg-gray-800 outline-none px-4 py-2 mx-auto mt-3 shadow-[inset_0px_0px_4px_4px_#1a202c]"
+                id="display">
+        </div>
+        <div class="button-col flex flex-col flex-wrap">
+            <div class="buttons flex-row flex justify-around flex-wrap mt-8 mb-6">
+                <button id="all-clear"
+                    class="w-16 h-16 bg-red-800 text-black font-bold shadow-[0px_0px_8px_1px_#05080d] rounded"
+                    value="AC">AC</button>
+                <button id="delete"
+                    class="w-16 h-16 bg-red-800 text-black font-semibold shadow-[0px_0px_8px_1px_#05080d] rounded">DE</button>
+                <button id="decimal"
+                    class="w-16 h-16 bg-green-800 text-black shadow-[0px_0px_8px_1px_#05080d] rounded font-semibold">.</button>
+                <button id="divide"
+                    class=" w-16 h-16 bg-green-800 text-black shadow-[0px_0px_8px_1px_#05080d] rounded font-semibold">/</button>
+            </div>
+            <div class="buttons flex-row flex justify-around flex-wrap mb-6">
+                <button id="seven"
+                    class="w-16 h-16 bg-slate-600 text-black shadow-[0px_0px_8px_1px_#05080d] rounded font-semibold">7</button>
+                <button id="eight"
+                    class="w-16 h-16 bg-slate-600 text-black shadow-[0px_0px_8px_1px_#05080d] rounded font-semibold">8</button>
+                <button id="nine"
+                    class="w-16 h-16 bg-slate-600 text-black shadow-[0px_0px_8px_1px_#05080d] rounded font-semibold">9</button>
+                <button id="multiply"
+                    class=" w-16 h-16 bg-green-800 text-black shadow-[0px_0px_8px_1px_#05080d] rounded font-semibold">*</button>
+            </div>
+            <div class="buttons flex-row flex justify-around flex-wrap mb-6">
+                <button id="four"
+                    class="w-16 h-16 bg-slate-600 text-black shadow-[0px_0px_8px_1px_#05080d] rounded font-semibold">4</button>
+                <button id="five"
+                    class="w-16 h-16 bg-slate-600 text-black shadow-[0px_0px_8px_1px_#05080d] rounded font-semibold">5</button>
+                <button id="six"
+                    class="w-16 h-16 bg-slate-600 text-black shadow-[0px_0px_8px_1px_#05080d] rounded font-semibold">6</button>
+                <button id="substract"
+                    class=" w-16 h-16 bg-green-800 text-black shadow-[0px_0px_8px_1px_#05080d] rounded font-semibold">-</button>
+            </div>
+            <div class="buttons flex-row flex justify-around flex-wrap mb-6">
+                <button id="one"
+                    class="w-16 h-16 bg-slate-600 text-black shadow-[0px_0px_8px_1px_#05080d] rounded font-semibold">1</button>
+                <button id="two"
+                    class="w-16 h-16 bg-slate-600 text-black shadow-[0px_0px_8px_1px_#05080d] rounded font-semibold">2</button>
+                <button id="three"
+                    class="w-16 h-16 bg-slate-600 text-black shadow-[0px_0px_8px_1px_#05080d] rounded font-semibold">3</button>
+                <button id="add"
+                    class=" w-16 h-16 bg-green-800 text-black shadow-[0px_0px_8px_1px_#05080d] rounded font-semibold">+</button>
+            </div>
+            <div class="buttons flex-row flex justify-around flex-wrap mb-6">
+                <button id="dblzero"
+                    class="w-16 h-16 bg-slate-600 text-black shadow-[0px_0px_8px_1px_#05080d] rounded font-semibold">00</button>
+                <button id="zero"
+                    class="w-16 h-16 bg-slate-600 text-black shadow-[0px_0px_8px_1px_#05080d] rounded font-semibold">0</button>
+                <button id="equals"
+                    class="w-44 h-16 bg-yellow-600 text-black shadow-[0px_0px_8px_1px_#05080d] rounded font-bold">=</button>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="src/script.js"></script>
+</body>
+
+</html>
